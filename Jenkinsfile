@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 
 properties([
+   pipelineTriggers([cron('H 0 * * *')]),
    disableConcurrentBuilds()
 ])
 node {
